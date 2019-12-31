@@ -25,3 +25,5 @@ e
 -src/main/java/market/model/PedidoProduto.java,1\2\12495b57dbd8ce5ae7be83661ad533512e1d6abe
 f
 6src/main/java/market/controller/ProdutoController.java,d\9\d946b75dc9aea868ec1a169c1266f3e4c4b1a2ee
+f
+6src/main/java/market/controller/ClienteController.java,7\9\791fc02079bb3edb1bdb73d85daaf0df09767159

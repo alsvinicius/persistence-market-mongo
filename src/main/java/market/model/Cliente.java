@@ -1,15 +1,17 @@
 package market.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
 @Document(collection = "clientes")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Cliente {
 
     @Id
-    private long clienteId;
+    private long idCliente;
 
     private String cpf;
 
@@ -17,12 +19,12 @@ public class Cliente {
 
     private List<Endereco> enderecos;
 
-    public long getClienteId() {
-        return clienteId;
+    public long getIdCliente() {
+        return idCliente;
     }
 
-    public void setClienteId(long clienteId) {
-        this.clienteId = clienteId;
+    public void setIdCliente(long idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getCpf() {

@@ -1,7 +1,7 @@
 package market.controller;
 
-import market.model.Produto;
-import market.repository.ProdutoRepository;
+import market.model.Cliente;
+import market.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -11,30 +11,30 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("/produtos")
-public class ProdutoController {
+@RequestMapping("/clientes")
+public class ClienteController {
 
     @Autowired
-    ProdutoRepository repository;
+    ClienteRepository repository;
 
     @PostMapping("/inserir")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
-    public Produto inserir(
-            @RequestBody Produto produto
+    public Cliente inserir(
+            @RequestBody Cliente cliente
     ) {
-        repository.insert(produto);
-        return produto;
+        repository.insert(cliente);
+        return cliente;
     }
 
     @PatchMapping("/alterar/{id}")
     @ResponseBody
-    public Optional<Produto> alterar(
+    public Optional<Cliente> alterar(
             @PathVariable Long id,
-            @RequestBody Produto produto
+            @RequestBody Cliente cliente
     ) {
-        produto.setIdProduto(id);
-        repository.save(produto);
+        cliente.setIdCliente(id);
+        repository.save(cliente);
         return repository.findById(id);
     }
 
@@ -43,15 +43,14 @@ public class ProdutoController {
     public void excluir(
             @PathVariable Long id
     ) {
-        Produto produto = new Produto();
-        produto.setIdProduto(id);
-        repository.delete(produto);
+        Cliente cliente = new Cliente();
+        cliente.setIdCliente(id);
+        repository.delete(cliente);
     }
 
     @GetMapping
     @ResponseBody
-    public List<Produto> listar() {
+    public List<Cliente> listar() {
         return repository.findAll();
     }
-
 }
