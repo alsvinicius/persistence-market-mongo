@@ -1,7 +1,7 @@
 package market.controller;
 
 import market.model.Cliente;
-import market.repository.ClienteRepository;
+import market.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -15,7 +15,7 @@ import java.util.Optional;
 public class ClienteController {
 
     @Autowired
-    ClienteRepository repository;
+    private ClienteService service;
 
     @PostMapping("/inserir")
     @ResponseBody
@@ -23,8 +23,7 @@ public class ClienteController {
     public Cliente inserir(
             @RequestBody Cliente cliente
     ) {
-        repository.insert(cliente);
-        return cliente;
+        return service.inserir(cliente);
     }
 
     @PatchMapping("/alterar/{id}")
@@ -33,9 +32,7 @@ public class ClienteController {
             @PathVariable Long id,
             @RequestBody Cliente cliente
     ) {
-        cliente.setIdCliente(id);
-        repository.save(cliente);
-        return repository.findById(id);
+        return service.alterar(id, cliente);
     }
 
     @DeleteMapping("/excluir/{id}")
@@ -43,14 +40,12 @@ public class ClienteController {
     public void excluir(
             @PathVariable Long id
     ) {
-        Cliente cliente = new Cliente();
-        cliente.setIdCliente(id);
-        repository.delete(cliente);
+        service.excluir(id);
     }
 
     @GetMapping
     @ResponseBody
     public List<Cliente> listar() {
-        return repository.findAll();
+        return service.listar();
     }
 }

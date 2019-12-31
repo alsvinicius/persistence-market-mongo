@@ -13,6 +13,8 @@ public class Pedido {
 
     private long idCliente;
 
+    private double valor;
+
     public long getIdPedido() {
         return idPedido;
     }
@@ -35,5 +37,13 @@ public class Pedido {
 
     public void setIdCliente(long idCliente) {
         this.idCliente = idCliente;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 }

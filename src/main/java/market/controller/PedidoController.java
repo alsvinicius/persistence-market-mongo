@@ -1,7 +1,7 @@
 package market.controller;
 
-import market.model.Endereco;
-import market.service.EnderecoService;
+import market.model.Pedido;
+import market.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -11,30 +11,30 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("/clientes/{id_cliente}/enderecos")
-public class EnderecoController {
+@RequestMapping("/clientes/{id_cliente}/pedidos")
+public class PedidoController {
 
     @Autowired
-    EnderecoService service;
+    PedidoService service;
 
     @PostMapping("/inserir")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
-    public Endereco inserir(
+    public Pedido inserir(
             @PathVariable("id_cliente") Long idCliente,
-            @RequestBody Endereco endereco
+            @RequestBody Pedido pedido
     ) {
-        return service.inserir(endereco, idCliente);
+        return service.inserir(idCliente, pedido);
     }
 
     @PatchMapping("/alterar/{id}")
     @ResponseBody
-    public Optional<Endereco> alterar(
+    public Optional<Pedido> alterar(
             @PathVariable("id_cliente") Long idCliente,
             @PathVariable Long id,
-            @RequestBody Endereco endereco
+            @RequestBody Pedido pedido
     ) {
-        return service.alterar(id, idCliente, endereco);
+        return service.alterar(idCliente, id, pedido);
     }
 
     @DeleteMapping("/excluir/{id}")
@@ -43,15 +43,15 @@ public class EnderecoController {
             @PathVariable("id_cliente") Long idCliente,
             @PathVariable Long id
     ) {
-        service.excluir(id, idCliente);
+        service.excluir(idCliente, id);
     }
 
     @GetMapping
     @ResponseBody
-    public List<Endereco> listar(
+    public List<Pedido> listar(
             @PathVariable("id_cliente") Long idCliente
     ) {
         return service.listar(idCliente);
     }
-    
+
 }

@@ -1,7 +1,7 @@
 package market.controller;
 
 import market.model.Produto;
-import market.repository.ProdutoRepository;
+import market.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -15,7 +15,7 @@ import java.util.Optional;
 public class ProdutoController {
 
     @Autowired
-    ProdutoRepository repository;
+    ProdutoService service;
 
     @PostMapping("/inserir")
     @ResponseBody
@@ -23,8 +23,7 @@ public class ProdutoController {
     public Produto inserir(
             @RequestBody Produto produto
     ) {
-        repository.insert(produto);
-        return produto;
+        return service.inserir(produto);
     }
 
     @PatchMapping("/alterar/{id}")
@@ -33,9 +32,7 @@ public class ProdutoController {
             @PathVariable Long id,
             @RequestBody Produto produto
     ) {
-        produto.setIdProduto(id);
-        repository.save(produto);
-        return repository.findById(id);
+        return service.alterar(id, produto);
     }
 
     @DeleteMapping("/excluir/{id}")
@@ -43,15 +40,13 @@ public class ProdutoController {
     public void excluir(
             @PathVariable Long id
     ) {
-        Produto produto = new Produto();
-        produto.setIdProduto(id);
-        repository.delete(produto);
+        service.excluir(id);
     }
 
     @GetMapping
     @ResponseBody
     public List<Produto> listar() {
-        return repository.findAll();
+        return service.listar();
     }
 
 }
