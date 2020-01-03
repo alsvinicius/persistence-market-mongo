@@ -7,19 +7,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Pedido {
 
     @Id
-    private long idPedido;
+    private String idPedido;
 
     private String data;
 
-    private long idCliente;
+    private String idCliente;
 
     private double valor;
 
-    public long getIdPedido() {
+    public String getIdPedido() {
         return idPedido;
     }
 
-    public void setIdPedido(long idPedido) {
+    public void setIdPedido(String idPedido) {
         this.idPedido = idPedido;
     }
 
@@ -31,11 +31,11 @@ public class Pedido {
         this.data = data;
     }
 
-    public long getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(long idCliente) {
+    public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
 

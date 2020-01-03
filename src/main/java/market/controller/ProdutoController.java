@@ -29,7 +29,7 @@ public class ProdutoController {
     @PatchMapping("/alterar/{id}")
     @ResponseBody
     public Optional<Produto> alterar(
-            @PathVariable Long id,
+            @PathVariable String id,
             @RequestBody Produto produto
     ) {
         return service.alterar(id, produto);
@@ -38,7 +38,7 @@ public class ProdutoController {
     @DeleteMapping("/excluir/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
-            @PathVariable Long id
+            @PathVariable String id
     ) {
         service.excluir(id);
     }

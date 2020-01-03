@@ -6,9 +6,9 @@ import org.springframework.data.mongodb.repository.Query;
 
 import java.util.List;
 
-public interface EnderecoRepository extends MongoRepository<Endereco, Long> {
+public interface EnderecoRepository extends MongoRepository<Endereco, String> {
 
     @Query("{'idCliente': ?0}")
-    List<Endereco> findByClient(Long idCliente);
+    List<Endereco> findByClient(String idCliente);
 
 }

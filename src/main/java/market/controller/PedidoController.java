@@ -2,6 +2,7 @@ package market.controller;
 
 import market.model.Pedido;
 import market.service.PedidoService;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -21,7 +22,7 @@ public class PedidoController {
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public Pedido inserir(
-            @PathVariable("id_cliente") Long idCliente,
+            @PathVariable("id_cliente") String idCliente,
             @RequestBody Pedido pedido
     ) {
         return service.inserir(idCliente, pedido);
@@ -30,8 +31,8 @@ public class PedidoController {
     @PatchMapping("/alterar/{id}")
     @ResponseBody
     public Optional<Pedido> alterar(
-            @PathVariable("id_cliente") Long idCliente,
-            @PathVariable Long id,
+            @PathVariable("id_cliente") String idCliente,
+            @PathVariable String id,
             @RequestBody Pedido pedido
     ) {
         return service.alterar(idCliente, id, pedido);
@@ -40,8 +41,8 @@ public class PedidoController {
     @DeleteMapping("/excluir/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
-            @PathVariable("id_cliente") Long idCliente,
-            @PathVariable Long id
+            @PathVariable("id_cliente") String idCliente,
+            @PathVariable String id
     ) {
         service.excluir(idCliente, id);
     }
@@ -49,7 +50,7 @@ public class PedidoController {
     @GetMapping
     @ResponseBody
     public List<Pedido> listar(
-            @PathVariable("id_cliente") Long idCliente
+            @PathVariable("id_cliente") String idCliente
     ) {
         return service.listar(idCliente);
     }

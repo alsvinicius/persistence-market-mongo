@@ -1,37 +1,39 @@
 package market.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "pedidos_produtos")
 public class PedidoProduto {
 
-    private long idPedidoProduto;
+    @Id
+    private String idPedidoProduto;
 
-    private long idPedido;
+    private String idPedido;
 
-    private long idProduto;
+    private String idProduto;
 
-    public long getIdPedidoProduto() {
+    public String getIdPedidoProduto() {
         return idPedidoProduto;
     }
 
-    public void setIdPedidoProduto(long idPedidoProduto) {
+    public void setIdPedidoProduto(String idPedidoProduto) {
         this.idPedidoProduto = idPedidoProduto;
     }
 
-    public long getIdPedido() {
+    public String getIdPedido() {
         return idPedido;
     }
 
-    public void setIdPedido(long idPedido) {
+    public void setIdPedido(String idPedido) {
         this.idPedido = idPedido;
     }
 
-    public long getIdProduto() {
+    public String getIdProduto() {
         return idProduto;
     }
 
-    public void setIdProduto(long idProduto) {
+    public void setIdProduto(String idProduto) {
         this.idProduto = idProduto;
     }
 }

@@ -2,6 +2,7 @@ package market.controller;
 
 import market.model.Cliente;
 import market.service.ClienteService;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -29,7 +30,7 @@ public class ClienteController {
     @PatchMapping("/alterar/{id}")
     @ResponseBody
     public Optional<Cliente> alterar(
-            @PathVariable Long id,
+            @PathVariable String id,
             @RequestBody Cliente cliente
     ) {
         return service.alterar(id, cliente);
@@ -38,7 +39,7 @@ public class ClienteController {
     @DeleteMapping("/excluir/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
-            @PathVariable Long id
+            @PathVariable String id
     ) {
         service.excluir(id);
     }

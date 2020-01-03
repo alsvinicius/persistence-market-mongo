@@ -1,5 +1,6 @@
 package market.model;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -7,9 +8,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Endereco {
 
     @Id
-    private long idEndereco;
+    private String idEndereco;
 
-    private long idCliente;
+    private String idCliente;
 
     private String logradouro;
 
@@ -21,19 +22,19 @@ public class Endereco {
 
     private String uf;
 
-    public long getIdEndereco() {
+    public String getIdEndereco() {
         return idEndereco;
     }
 
-    public void setIdEndereco(long idEndereco) {
+    public void setIdEndereco(String idEndereco) {
         this.idEndereco = idEndereco;
     }
 
-    public long getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(long idCliente) {
+    public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
 

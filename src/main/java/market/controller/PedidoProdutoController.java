@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.List;
 
@@ -16,24 +17,21 @@ public class PedidoProdutoController {
     @Autowired
     PedidoProdutoService service;
 
-    //TODO verificar se produto possui estoque e reduzir quantidade
-    //TODO adicionar valor ao pedido
     @PostMapping("/inserir")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public PedidoProduto inserir(
-            @PathVariable("id_pedido") Long idPedido,
+            @PathVariable("id_pedido") String idPedido,
             @RequestBody PedidoProduto pedidoProduto
-    ) {
+    ) throws HttpClientErrorException {
         return service.inserir(idPedido, pedidoProduto);
     }
 
-    //TODO voltar a quantidade ao produto
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/excluir/{id_produto}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
-            @PathVariable("id_pedido") Long idPedido,
-            @PathVariable Long id
+            @PathVariable("id_pedido") String idPedido,
+            @PathVariable("id_produto") String id
     ) {
         service.excluir(idPedido, id);
     }
@@ -41,7 +39,7 @@ public class PedidoProdutoController {
     @GetMapping
     @ResponseBody
     public List<PedidoProduto> listar(
-            @PathVariable("id_pedido") Long idPedido
+            @PathVariable("id_pedido") String idPedido
     ) {
         return service.listar(idPedido);
     }
