@@ -10,7 +10,7 @@ public class Endereco {
     @Id
     private String idEndereco;
 
-    private String idCliente;
+    private ObjectId idCliente;
 
     private String logradouro;
 
@@ -30,11 +30,11 @@ public class Endereco {
         this.idEndereco = idEndereco;
     }
 
-    public String getIdCliente() {
+    public ObjectId getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(ObjectId idCliente) {
         this.idCliente = idCliente;
     }
 

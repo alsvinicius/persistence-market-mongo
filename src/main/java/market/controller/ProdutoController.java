@@ -17,7 +17,7 @@ public class ProdutoController {
     @Autowired
     ProdutoService service;
 
-    @PostMapping("/inserir")
+    @PostMapping("/")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public Produto inserir(
@@ -26,7 +26,7 @@ public class ProdutoController {
         return service.inserir(produto);
     }
 
-    @PatchMapping("/alterar/{id}")
+    @PatchMapping("/{id}")
     @ResponseBody
     public Optional<Produto> alterar(
             @PathVariable String id,
@@ -35,7 +35,7 @@ public class ProdutoController {
         return service.alterar(id, produto);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
             @PathVariable String id

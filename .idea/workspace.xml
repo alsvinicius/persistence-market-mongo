@@ -2,43 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38cf94dc-d38d-46c0-8442-7d30f2685235" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/market/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/cliente/adicionar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/cliente/lista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/endereco/adicionar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/endereco/lista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/js/cliente.vm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/js/endereco.vm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/js/knockout-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/js/pedido.vm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/js/produto.vm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/pedido/adicionar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/pedido/lista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/produto/adicionar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/produto/lista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12af06d43879213b19f9fbb930425bcf9f57583a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12af06d43879213b19f9fbb930425bcf9f57583a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25cd1f9629803d333882ca1be1388a4890f2e2f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25cd1f9629803d333882ca1be1388a4890f2e2f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53dc6ca27ffa1e0af4aaf1b4e2f26445ba9de172" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53dc6ca27ffa1e0af4aaf1b4e2f26445ba9de172" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57326e7558cb508c0b591ea8858fad5fcbfb7892" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57326e7558cb508c0b591ea8858fad5fcbfb7892" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65598bff6a40a2322ce479ba1879235bc2312fa9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65598bff6a40a2322ce479ba1879235bc2312fa9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/791fc02079bb3edb1bdb73d85daaf0df09767159" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/791fc02079bb3edb1bdb73d85daaf0df09767159" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d946b75dc9aea868ec1a169c1266f3e4c4b1a2ee" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d946b75dc9aea868ec1a169c1266f3e4c4b1a2ee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe06910ec58b8759782943489ccc32fd91ae016b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe06910ec58b8759782943489ccc32fd91ae016b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/controller/EnderecoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/controller/EnderecoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/controller/PedidoProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/controller/PedidoProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/market/controller/PedidoProdutoController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/controller/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/model/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/model/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/model/Endereco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/model/PedidoProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/model/PedidoProduto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/market/model/PedidoProduto.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/repository/EnderecoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/repository/EnderecoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/repository/PedidoProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/repository/PedidoProdutoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/market/repository/PedidoProdutoRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/repository/PedidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/repository/PedidoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/repository/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/repository/ProdutoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/service/ClienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/service/EnderecoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/service/EnderecoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/service/PedidoProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/service/PedidoProdutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/market/service/PedidoProdutoService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/market/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/service/PedidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/market/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/market/service/ProdutoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/ClienteController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/EnderecoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/EnderecoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/PedidoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/PedidoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/PedidoProdutoController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/ProdutoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/controller/ProdutoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Endereco.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Pedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/PedidoProduto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/PedidoProduto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/ClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/ClienteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/model/PedidoProduto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/EnderecoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/EnderecoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/PedidoProdutoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/PedidoProdutoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/PedidoProdutoRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/PedidoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/PedidoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/ProdutoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/repository/ProdutoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/service/EnderecoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/service/EnderecoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/service/PedidoProdutoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/service/PedidoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/produtos-mongo-1.0-SNAPSHOT/WEB-INF/classes/market/service/PedidoService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,42 +151,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1577833227744">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1581638200196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577833227744" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1578011819268">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581638200196" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1581775249364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578011819268" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1578011819268">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581775249364" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1581775249364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578011819268" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1578011819267">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581775249364" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1581775249363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578011819267" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1578011819268">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581775249363" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1581775249364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578011819268" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1578011819269">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581775249364" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1581775249244">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578011819269" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1578011819269">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581775249244" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1581775249243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578011819269" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1578011819269">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581775249243" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1581775249243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578011819269" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1578011819269">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581775249243" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1581775249243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578011819269" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581775249243" />
+    <state width="776" height="420" key="XDebugger.FullValuePopup" timestamp="1581638066138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="776" height="420" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1581638066138" />
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577814895179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -177,16 +199,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="144" width="738" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1578008612202" />
+    <state x="209" y="34" key="new project wizard" timestamp="1579818628877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1579818628877" />
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1581638094603">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1581638094603" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1577834136970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1577834136970" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581637721947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581637721947" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
         <watch expression="produtoRepository" language="JAVA" />
         <watch expression="produto.getIdProduto().toString()" language="JAVA" />
+        <watch expression="listaProdutos.stream().collect(Collectors.groupingBy(Produto::getIdProduto))" language="JAVA" custom="java.util.stream.Collectors,java.util.function.Function" />
+        <watch expression="aggregation.toString()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -1,7 +1,10 @@
 package market.model;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.List;
 
 @Document(collection = "pedidos")
 public class Pedido {
@@ -11,9 +14,11 @@ public class Pedido {
 
     private String data;
 
-    private String idCliente;
+    private ObjectId idCliente;
 
     private double valor;
+
+    private List<Produto> produtos;
 
     public String getIdPedido() {
         return idPedido;
@@ -31,11 +36,11 @@ public class Pedido {
         this.data = data;
     }
 
-    public String getIdCliente() {
+    public ObjectId getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(ObjectId idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -45,5 +50,13 @@ public class Pedido {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
     }
 }

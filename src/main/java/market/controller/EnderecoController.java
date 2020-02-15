@@ -2,7 +2,6 @@ package market.controller;
 
 import market.model.Endereco;
 import market.service.EnderecoService;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -18,7 +17,7 @@ public class EnderecoController {
     @Autowired
     EnderecoService service;
 
-    @PostMapping("/inserir")
+    @PostMapping("/")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public Endereco inserir(
@@ -28,7 +27,7 @@ public class EnderecoController {
         return service.inserir(endereco, idCliente);
     }
 
-    @PatchMapping("/alterar/{id}")
+    @PatchMapping("/{id}")
     @ResponseBody
     public Optional<Endereco> alterar(
             @PathVariable("id_cliente") String idCliente,
@@ -38,7 +37,7 @@ public class EnderecoController {
         return service.alterar(id, idCliente, endereco);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
             @PathVariable("id_cliente") String idCliente,

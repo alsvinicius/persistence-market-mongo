@@ -10,6 +10,6 @@ import java.util.List;
 public interface PedidoRepository extends MongoRepository<Pedido, String> {
 
     @Query("{'idCliente': ?0}")
-    List<Pedido> findByClient(String idCliente);
+    List<Pedido> findByClient(ObjectId idCliente);
 
 }

@@ -2,7 +2,6 @@ package market.controller;
 
 import market.model.Pedido;
 import market.service.PedidoService;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -18,7 +17,7 @@ public class PedidoController {
     @Autowired
     PedidoService service;
 
-    @PostMapping("/inserir")
+    @PostMapping("/")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public Pedido inserir(
@@ -28,7 +27,7 @@ public class PedidoController {
         return service.inserir(idCliente, pedido);
     }
 
-    @PatchMapping("/alterar/{id}")
+    @PatchMapping("/{id}")
     @ResponseBody
     public Optional<Pedido> alterar(
             @PathVariable("id_cliente") String idCliente,
@@ -38,7 +37,24 @@ public class PedidoController {
         return service.alterar(idCliente, id, pedido);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @GetMapping("/{id}")
+    @ResponseBody
+    public Optional<Pedido> consultar(
+            @PathVariable String id
+    ) {
+        return service.consultar(id);
+    }
+
+    @PostMapping("/{id}/produtos/{idProduto}")
+    @ResponseBody
+    public Pedido adicionarProduto(
+            @PathVariable String id,
+            @PathVariable String idProduto
+    ) {
+        return service.adicionarProduto(id, idProduto);
+    }
+
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(
             @PathVariable("id_cliente") String idCliente,

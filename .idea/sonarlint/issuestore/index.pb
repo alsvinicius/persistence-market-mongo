@@ -43,3 +43,5 @@ _
 /src/main/java/market/service/PedidoService.java,f\e\fe06910ec58b8759782943489ccc32fd91ae016b
 l
 <src/main/java/market/controller/PedidoProdutoController.java,6\5\65598bff6a40a2322ce479ba1879235bc2312fa9
+Z
+*src/main/java/market/config/WebConfig.java,d\2\d2fee411d3532cde228736c27952cc5a332de1e9
